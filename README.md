@@ -1,3 +1,4 @@
-This is a repository for demonstrating the `Algorithmia`<>`Arize` integration.
-
-The details are in `ArizeDemo.ipynb`, which pipes input to an algorithm https://algorithmia.com/algorithms/algorithmia_arize/sklearn_demo.
+This repository contains a notebook `ArizeDemo.ipynb`, which demonstrates one approach for integrating Arize with Algorithmia. The workflow contains the following steps:
+* Train an `sklearn` model.
+* Upload the model to a hosted data collection on Algorithmia.
+* Call the model for inference by piping model input into the [sklearn_demo](https://algorithmia.com/algorithms/algorithmia_arize/sklearn_demo) algorithm, which is hosted on Algorithmia's public cluster. The algorithm is set up to log inference metrics to Arize before returning a response.
